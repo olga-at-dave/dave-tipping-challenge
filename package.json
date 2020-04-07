@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "run-react": "cd ./react && yarn && yarn start"
+    "run-react": "cd ./react && yarn && yarn start",
+    "run-vue": "cd ./vue && yarn && yarn start"
   }
 }
