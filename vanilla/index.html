@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dave Tipping Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <div class="App">
+    <div class="Top">
+      <h1 class="Header">I sent you the money!</h1>
+      <p class="SubHeader">
+        Your optional tip helps us stay in business. We also plant a tree for every % tip.
+      </p>
+      <img src="public/dave.png" class="Dave" />
+      <img src="public/background.png" class="Background" />
+    </div>
+    <div class="Tips">
+      <div class="Box SelectedBox" onclick="selectTip(this)">
+        <span class="BoxTitle">No tip</span>
+      </div>
+      <div class="Box" onclick="selectTip(this)">
+        <p class="BoxTitle">5</p>
+        <span class="BoxSubtitle">Trees planted</span>
+        <p class="BoxSubtitle">5%</p>
+      </div>
+      <div class="Box" onclick="selectTip(this)">
+        <p class="BoxTitle">10</p>
+        <span class="BoxSubtitle">Trees planted</span>
+        <p class="BoxSubtitle">10%</p>
+      </div>
+      <div class="Box" onclick="selectTip(this)">
+        <p class="BoxTitle">30</p>
+        <span class="BoxSubtitle">Trees planted</span>
+        <p class="BoxSubtitle">15%</p>
+      </div>
+      <div class="Box" onclick="selectTip(this)">
+        <p class="BoxTitle">40</p>
+        <span class="BoxSubtitle">Trees planted</span>
+        <p class="BoxSubtitle">20%</p>
+      </div>
+    </div>
+    <p class="Pay">Pay nothing now. Collected on payback.</p>
+    <button class="Button" onclick="handleSubmit()"><span>Tip</span></button>
+  </div>
+</body>
+</html>

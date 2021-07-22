@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.Top {
+  background-color: #dfe7f8;
+  position: relative;
+}
+
+.Dave {
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+}
+
+.Background {
+  width: 100%;
+}
+
+.Header {
+  position: absolute;
+  top: 55px;
+  color: #3c3c3c;
+  left: 0;
+  right: 0;
+  font-size: 26px;
+}
+
+.SubHeader {
+  position: absolute;
+  top: 105px;
+  color: #898989;
+  font-size: 17px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.Tips {
+  margin-top: 58px;
+  display: flex;
+  overflow-x: auto;
+  min-width: 100%;
+}
+
+.Box {
+  min-height: 108px;
+  min-width: 124px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.SelectedBox {
+  border: 2px solid #0b9a40;
+  background-color: #eafbf0;
+}
+
+.BoxTitle {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.BoxSubtitle {
+  font-size: 12px;
+  line-height: 16px;
+  color: #3c3c3c;
+}
+
+.Pay {
+  margin-top: 32px;
+  color: #898989;
+}
+
+.Button {
+  background-color: #0b9a40;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #ffffff;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 60px;
+}

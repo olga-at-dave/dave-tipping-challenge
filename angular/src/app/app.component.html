@@ -1,0 +1,40 @@
+<div class="App">
+  <div class="Top">
+    <h1 class="Header">I sent you the money!</h1>
+    <p class="SubHeader">
+      Your optional tip helps us stay in business. We also plant a tree for every % tip.
+    </p>
+    <img src="assets/dave.png" class="Dave" />
+    <img src="assets/background.png" class="Background" />
+  </div>
+
+  <div class="Tips">
+      <div class="Box" [ngClass]="{'SelectedBox': selectedBox === 1}" (click)="onSelectOption(1)">
+      <span class="BoxTitle">No tip</span>
+    </div>
+    <div class="Box" [ngClass]="{'SelectedBox': selectedBox === 2}" (click)="onSelectOption(2)">
+      <p class="BoxTitle">{{tipOptions[0].trees}}</p>
+      <span class="BoxSubtitle">Trees planted</span>
+      <p class="BoxSubtitle">{{tipOptions[0].amount}}%</p>
+    </div>
+        <div class="Box" [ngClass]="{'SelectedBox': selectedBox === 3}" (click)="onSelectOption(3)">
+      <p class="BoxTitle">{{tipOptions[1].trees}}</p>
+      <span class="BoxSubtitle">Trees planted</span>
+      <p class="BoxSubtitle">{{tipOptions[1].amount}}%</p>
+    </div>
+        <div class="Box" [ngClass]="{'SelectedBox': selectedBox === 4}" (click)="onSelectOption(4)">
+      <p class="BoxTitle">{{tipOptions[2].trees}}</p>
+      <span class="BoxSubtitle">Trees planted</span>
+      <p class="BoxSubtitle">{{tipOptions[2].amount}}%</p>
+    </div>
+        <div class="Box" [ngClass]="{'SelectedBox': selectedBox === 5}" (click)="onSelectOption(5)">
+      <p class="BoxTitle">{{tipOptions[3].trees}}</p>
+      <span class="BoxSubtitle">Trees planted</span>
+      <p class="BoxSubtitle">{{tipOptions[3].amount}}%</p>
+    </div>
+  </div>
+  <p class="Pay">Pay nothing now. Collected on payback.</p>
+  <button class="Button" (click)="onSubmit()">
+    <span>Tip</span>
+  </button>
+</div>
